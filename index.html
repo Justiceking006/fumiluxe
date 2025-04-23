@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FumiLuxe</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .logo-font {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <div class="text-2xl font-semibold text-red-600 logo-font">Fumilogzi</div>
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#collections" class="hover:text-red-600 transition">Collections</a>
+      <a href="#about" class="hover:text-red-600 transition">About</a>
+      <a href="#lookbook" class="hover:text-red-600 transition">Lookbook</a>
+      <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative h-[90vh] w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1533670801803-099bc723fa1f?auto=format&fit=crop&w=1350&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold logo-font mb-4">Wear Your Confidence</h1>
+      <p class="text-lg md:text-xl mb-6">Luxury streetwear for the bold and beautiful</p>
+      <a href="#collections" class="inline-block bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-red-600 hover:text-white transition">
+        Explore Collection
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
