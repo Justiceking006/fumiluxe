@@ -18,18 +18,34 @@
       font-family: 'Playfair Display', serif;
     }
   </style>
+  <style>
+  .text-gold-500 {
+    color: #FFD700;
+  }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 bg-white shadow-md px-6 py-4 flex items-center justify-between">
-    <div class="text-2xl font-semibold text-red-600 logo-font">FumiLuxe</div>
-    <nav class="hidden md:flex gap-6 text-sm font-medium">
-      <a href="#collections" class="hover:text-red-600 transition">Collections</a>
-      <a href="#about" class="hover:text-red-600 transition">About</a>
-      <a href="#lookbook" class="hover:text-red-600 transition">Lookbook</a>
-      <a href="#contact" class="hover:text-red-600 transition">Contact</a>
-    </nav>
+  <header class="sticky top-0 z-50 bg-black text-white shadow-md px-6 py-4 flex items-center justify-between">
+  <div class="text-2xl font-semibold text-gold-500 logo-font">FumiLuxe</div>
+
+  <!-- Mobile menu button -->
+  <button id="menu-toggle" class="md:hidden text-gold-500 focus:outline-none">
+    <!-- Hamburger Icon -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+
+  <!-- Navigation Menu -->
+  <nav id="menu" class="hidden md:flex flex-col md:flex-row gap-6 text-sm font-medium bg-black md:bg-transparent absolute md:static top-full left-0 w-full md:w-auto text-white md:text-white py-4 md:py-0 px-6 md:px-0">
+    <a href="#collections" class="hover:text-gold-500 transition">Collections</a>
+    <a href="#about" class="hover:text-gold-500 transition">About</a>
+    <a href="#lookbook" class="hover:text-gold-500 transition">Lookbook</a>
+    <a href="#contact" class="hover:text-gold-500 transition">Contact</a>
+  </nav>
   </header>
 
   <!-- HERO SECTION -->
@@ -352,6 +368,13 @@
   </div>
 </section>
 
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
 
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
