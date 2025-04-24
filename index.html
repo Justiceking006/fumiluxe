@@ -253,68 +253,44 @@
 </section>
 
   <!-- FULL ABOUT SECTION -->
-<section class="fade-up py-20 px-6 bg-gray-100">
+<!-- ABOUT US SECTION WITH ACTIVE STATS -->
+<section class="fade-up py-20 px-6 text-white relative bg-black bg-fixed bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/5704844/pexels-photo-5704844.jpeg');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
 
-  <!-- TOP CENTERED INTRO -->
-  <div class="text-center max-w-3xl mx-auto mb-16">
-    <h5 class="text-red-600 uppercase font-semibold mb-2">About Us</h5>
-    <h2 class="text-4xl font-bold text-gray-800 mb-4">The Heart of Fumiluxe</h2>
-    <p class="text-gray-600 leading-relaxed">
-      At Fumiluxe, fashion is not just fabric — it’s the voice of elegance, self-expression, and culture. We blend modern design with timeless tailoring, crafting pieces that turn heads and hold hearts.
-    </p>
-  </div>
-
-  <!-- 3 COLUMN GRID (CORE VALUES) -->
-  <div class="grid md:grid-cols-3 gap-8 mb-20">
-    <div class="bg-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">Authenticity</h3>
-      <p class="text-gray-600">Every piece we make is 100% original, tailored to represent YOU — no imitations, just vibes.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">Precision</h3>
-      <p class="text-gray-600">From measurements to materials, our process is built for perfect fits and flawless finishes.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
-      <h3 class="text-xl font-semibold mb-2 text-gray-800">Elegance</h3>
-      <p class="text-gray-600">We don't just design clothes. We design energy, grace, and unforgettable entrances.</p>
-    </div>
-  </div>
-
-  <!-- 2 COLUMN LAYOUT (What Makes Us Different) -->
-  <div class="flex flex-col md:flex-row items-center gap-10 mb-20">
-    <div class="md:w-1/2">
-      <img src="https://cdn.pixabay.com/photo/2022/02/24/17/35/woman-7032226_960_720.jpg" alt="Fumiluxe Fabric" class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-500">
-    </div>
-    <div class="md:w-1/2">
-      <h5 class="text-red-600 uppercase font-semibold mb-2">Why Choose Us?</h5>
-      <h2 class="text-3xl font-bold mb-4 text-gray-800">More Than a Tailor</h2>
-      <p class="text-gray-600 leading-relaxed">
-        We’re stylists, storytellers, and creators. With every piece, we fuse tradition with trend, making sure our clients look stunning — and feel even better.
+  <div class="relative z-10 max-w-6xl mx-auto">
+    <!-- TOP CENTERED INTRO -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h5 class="text-yellow-400 uppercase font-semibold mb-2">About Us</h5>
+      <h2 class="text-4xl font-bold mb-4">The Heart of FumiOni</h2>
+      <p class="text-gray-200 leading-relaxed">
+        At FumiOni, fashion is not just fabric — it’s the voice of elegance, self-expression, and culture. We blend modern design with timeless tailoring, crafting pieces that turn heads and hold hearts.
       </p>
     </div>
-  </div>
 
-  <!-- ZIG-ZAG BLOCK -->
-  <div class="flex flex-col md:flex-row-reverse items-center gap-10 mb-20">
-    <div class="md:w-1/2">
-      <img src="https://cdn.pixabay.com/photo/2022/09/19/16/37/fashion-designer-7465412_960_720.jpg" alt="Fumiluxe Tailoring" class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-500">
+    <!-- VALUES -->
+    <div class="grid md:grid-cols-3 gap-8 mb-20">
+      <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-yellow-300">Authenticity</h3>
+        <p class="text-gray-200">Every piece we make is original — no imitations, just vibes.</p>
+      </div>
+      <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-yellow-300">Precision</h3>
+        <p class="text-gray-200">Our process is built for perfect fits and flawless finishes.</p>
+      </div>
+      <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-500 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-yellow-300">Elegance</h3>
+        <p class="text-gray-200">We don’t design clothes. We design bold, graceful energy.</p>
+      </div>
     </div>
-    <div class="md:w-1/2">
-      <h5 class="text-red-600 uppercase font-semibold mb-2">The Fumiluxe Experience</h5>
-      <h2 class="text-3xl font-bold mb-4 text-gray-800">Tailored With Love</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Our clients are family. We listen, sketch, design, and tailor with heart. It’s not fast fashion — it’s real fashion for real people.
-      </p>
+
+    <!-- ANIMATED COUNTER -->
+    <div class="text-center pt-12 border-t border-gray-300 border-opacity-20">
+      <p class="uppercase text-sm text-gray-300 mb-2">So far, we've styled</p>
+      <h2 id="counter" class="text-5xl font-bold text-yellow-400">0</h2>
+      <p class="text-gray-200 mt-2">...and still glowing</p>
     </div>
   </div>
-
-  <!-- BONUS FUN: Animated Counter -->
-  <div class="text-center pt-12 border-t border-gray-300">
-    <p class="uppercase text-sm text-gray-500 mb-2">So far, we’ve styled</p>
-    <h2 class="text-5xl font-bold text-red-600 animate-bounce">+250 Happy Clients</h2>
-    <p class="text-gray-600 mt-2">...and counting</p>
-  </div>
-
 </section>
 <!-- LOOKBOOK SECTION -->
 <section class="fade-up py-20 px-6 bg-[#f7f7f7]">
@@ -509,6 +485,36 @@
       if (node.nodeValue.includes("Fumiluxe")) {
         node.nodeValue = node.nodeValue.replace(/Fumiluxe/g, "FumiOni");
       }
+    }
+  });
+
+
+
+  function animateCounter(id, end, duration = 3000) {
+    let start = 0;
+    let current = document.getElementById(id);
+    let range = end - start;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let startTime = null;
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const value = Math.min(Math.floor((progress / duration) * end), end);
+      current.textContent = "+" + value + " Happy Clients";
+      if (value < end) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  }
+
+  // Trigger only when in view
+  window.addEventListener('scroll', () => {
+    const counter = document.getElementById("counter");
+    const rect = counter.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0 && !counter.dataset.started) {
+      counter.dataset.started = true;
+      animateCounter("counter", 250, 2000);
     }
   });
 
