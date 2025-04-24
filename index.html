@@ -83,7 +83,7 @@
 
 
   <!-- HERO SECTION -->
-  <section class="fade-in relative h-screen w-full bg-black flex items-center justify-center overflow-hidden">
+  <section id="home" class="fade-in relative h-screen w-full bg-black flex items-center justify-center overflow-hidden">
   <!-- Slideshow background images -->
   <div class="absolute inset-0 slideshow-image bg-cover bg-center transition-opacity duration-1000" style="background-image: url('https://images.pexels.com/photos/6311390/pexels-photo-6311390.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
   <div class="absolute inset-0 slideshow-image bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.pexels.com/photos/5704846/pexels-photo-5704846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
@@ -256,7 +256,7 @@
 
   <!-- FULL ABOUT SECTION -->
 <!-- ABOUT US SECTION WITH ACTIVE STATS -->
-<section class="fade-up py-20 px-6 text-white relative bg-black bg-fixed bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/5704844/pexels-photo-5704844.jpeg');">
+<section id="about" class="fade-up py-20 px-6 text-white relative bg-black bg-fixed bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/5704844/pexels-photo-5704844.jpeg');">
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
 
@@ -295,7 +295,7 @@
   </div>
 </section>
 <!-- LOOKBOOK SECTION -->
-<section class="fade-up py-20 px-6 bg-[#f7f7f7]">
+<section id="lookbook" class="fade-up py-20 px-6 bg-[#f7f7f7]">
   <div class="max-w-6xl mx-auto text-center mb-16">
     <h2 class="text-3xl font-bold text-black mb-4">Explore Our Looks</h2>
     <p class="text-gray-700 mb-12">Discover the latest trends and pieces from the FumiOni collection.</p>
@@ -349,7 +349,7 @@
 
   
 <!-- SOCIAL MEDIA SECTION - BLACK & GOLD -->
-<section class=" fade-down py-20 px-6 bg-black text-white">
+<section  class=" fade-down py-20 px-6 bg-black text-white">
   <div class="max-w-6xl mx-auto text-center mb-16">
     <h2 class="text-3xl font-bold text-gold-500 mb-6">Our Social Networks</h2>
     <p class="text-gray-300 mb-12">Follow us on social media to stay updated with the latest collections, style tips, and exclusive offers.</p>
@@ -401,6 +401,7 @@
     <div>
       <h3 class="text-lg font-semibold text-gold-500 mb-4">Quick Links</h3>
       <ul class="space-y-2 text-gray-400">
+        <li><a href="#home" class="hover:text-gold-500 transition">Collections</a></li>
         <li><a href="#collections" class="hover:text-gold-500 transition">Collections</a></li>
         <li><a href="#lookbook" class="hover:text-gold-500 transition">Lookbook</a></li>
         <li><a href="#about" class="hover:text-gold-500 transition">About Us</a></li>
@@ -424,12 +425,7 @@
 
 
 <script>
-  const toggleBtn = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
 
-  toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
 
 
   // Typewriter
